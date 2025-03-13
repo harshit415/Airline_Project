@@ -1,0 +1,73 @@
+.text-overlay {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: white; 
+    font-size: 60px; /* Default font size for larger screens */
+    font-weight: 600; 
+    z-index: 2;
+  }
+  
+  .card {
+    position: relative;
+  }
+  
+  .opacity-image {
+    z-index: 1;
+    filter: brightness(0.8); /* Default brightness */
+    width: 100%; /* Ensure the image takes full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .text-overlay {
+      font-size: 50px; /* Slightly smaller font size for smaller desktops */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .text-overlay {
+      font-size: 40px; /* Smaller font size for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .text-overlay {
+      font-size: 30px; /* Even smaller font size for smaller tablets */
+    }
+    .opacity-image {
+      filter: brightness(0.9); /* Slightly brighter for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-overlay {
+      font-size: 24px; 
+    }
+    .opacity-image {
+      filter: brightness(1); 
+     
+  }
+  }
+  .footer{
+    background-color: rgb(31, 29, 29);
+    color: rgb(197, 191, 191);
+  }
+  .img{
+    display: flex;
+   list-style-type: none;
+   justify-content: center;
+   align-items: center;
+  }
+  .img div{
+    text-align: center;
+   margin: 3px;
+
+    
+  }
+  .icon{
+    color: rgb(197, 191, 191);
+  }
